@@ -65,12 +65,32 @@ layout: default
                 <tbody>
                 <tr style="padding:0px">
                     <td style="padding:2.5%;width:65%;vertical-align:middle">
-                        <p>I am Computer Vision Researcher at the <a href="https://www.ival-mbzuai.com"> Computer Vision Department </a> at <a href="https://mbzuai.ac.ae/"> Mohamed Bin Zayed University of Artificial Intelligence </a> advised by <a
-                                href="https://scholar.google.com/citations?user=M59O9lkAAAAJ&hl=en"> Prof. Salman Khan</a>, where I work on
-                            VLMs for reasoning and OCR.
+                        <p>
+                          I am a Computer Vision researcher with the
+                          <a href="https://www.ival-mbzuai.com/" target="_blank" rel="noopener noreferrer">Intelligent Visual Analytics Lab (IVAL)</a>
+                          in the
+                          <a href="https://mbzuai.ac.ae/research-department/computer-vision-department/" target="_blank" rel="noopener noreferrer">Computer Vision Department</a>
+                          at
+                          <a href="https://mbzuai.ac.ae/" target="_blank" rel="noopener noreferrer">Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)</a>,
+                          advised by
+                          <a href="https://scholar.google.com/citations?user=M59O9lkAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Prof. Salman Khan</a>.
+                          My research focuses on vision-language models (VLMs) for reasoning and OCR, with an emphasis on efficient and reliable real-world deployment.
                         </p>
                         <p>
-                            I’m pursuing an MSc in Computer Vision at MBZUAI, and I combine academic research with building international ML systems. I’ve worked as a Research Scientist Intern at Naver (Parameter Lab), an Applied Scientist at Monta AI, and a Software Engineer at And Africa, with earlier ML internship experience at Scoville. In my research, I focus on state-of-the-art methods that are efficient, fast, robust, and reliable for real-world, on-device vision applications across OCR, VLMs, and mobile deployment.
+                          I’m pursuing an MSc in Computer Vision at
+                          <a href="https://mbzuai.ac.ae/" target="_blank" rel="noopener noreferrer">MBZUAI</a>,
+                          and I combine academic research with building production-facing ML systems.
+                          Previously, I was a Research Scientist Intern at
+                          <a href="https://www.parameterlab.de/" target="_blank" rel="noopener noreferrer">Parameter Lab</a>
+                          (in collaboration with
+                          <a href="https://www.naverlabs.com/en/" target="_blank" rel="noopener noreferrer">NAVER LABS</a>),
+                          an Applied Scientist at
+                          <a href="https://www.monta.ai/" target="_blank" rel="noopener noreferrer">Monta AI</a>,
+                          and a Software Engineer at
+                          <a href="https://andafrica.co.jp/" target="_blank" rel="noopener noreferrer">And Africa Co., Ltd.</a>,
+                          with earlier ML internship experience at
+                          <a href="https://scoville.jp/" target="_blank" rel="noopener noreferrer">Scoville</a>.
+                          Broadly, I build efficient, fast, and robust multimodal methods across OCR, VLMs, and on-device/mobile deployment.
                         </p>
 
 
@@ -111,6 +131,32 @@ layout: default
 
   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
+
+      <!-- Dr.LLM -->
+      <tr>
+        <td style="padding:20px;width:40%;vertical-align:middle">
+          <div class="one">
+            <img src="images/drllm.png" width="500" alt="Dr.LLM">
+          </div>
+        </td>
+        <td style="padding:20px;width:60%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2510.12773">
+            <font color="black"><strong>Dr.LLM: Dynamic Layer Routing in LLMs</strong></font>
+          </a>
+          <br>
+          <strong>Ahmed Heakl</strong>, Martin Gubri, Salman Khan, Sangdoo Yun, Seong Joon Oh
+          <br>
+          <em>Under Review</em>
+          <br>
+          <a href="https://arxiv.org/abs/2510.12773">Paper</a> /
+          <a href="https://github.com/parameterlab/dr-llm">Code</a>
+          <p></p>
+          <p>
+            Dr.LLM retrofits pretrained LLMs with lightweight per-layer routers that dynamically skip/execute/repeat layers under a compute budget,
+            improving efficiency while preserving accuracy via supervised routing derived from MCTS.
+          </p>
+        </td>
+      </tr>
 
       <!-- SVRPBench -->
       <tr>
@@ -279,31 +325,7 @@ layout: default
         </td>
       </tr>
 
-      <!-- Dr.LLM -->
-      <tr>
-        <td style="padding:20px;width:40%;vertical-align:middle">
-          <div class="one">
-            <img src="images/drllm.png" width="500" alt="Dr.LLM">
-          </div>
-        </td>
-        <td style="padding:20px;width:60%;vertical-align:middle">
-          <a href="https://arxiv.org/abs/2510.12773">
-            <font color="black"><strong>Dr.LLM: Dynamic Layer Routing in LLMs</strong></font>
-          </a>
-          <br>
-          <strong>Ahmed Heakl</strong>, Martin Gubri, Salman Khan, Sangdoo Yun, Seong Joon Oh
-          <br>
-          <em>arXiv 2025</em>
-          <br>
-          <a href="https://arxiv.org/abs/2510.12773">Paper</a> /
-          <a href="https://github.com/parameterlab/dr-llm">Code</a>
-          <p></p>
-          <p>
-            Dr.LLM retrofits pretrained LLMs with lightweight per-layer routers that dynamically skip/execute/repeat layers under a compute budget,
-            improving efficiency while preserving accuracy via supervised routing derived from MCTS.
-          </p>
-        </td>
-      </tr>
+      
 
       <!-- CAMEL-Bench -->
       <tr>
@@ -322,7 +344,6 @@ layout: default
           <em>NAACL 2025</em>
           <br>
           <a href="https://arxiv.org/abs/2410.18976">Paper</a> /
-          <a href="https://mbzuai-oryx.github.io/Camel-Bench/">Project Website</a> /
           <a href="https://github.com/mbzuai-oryx/CAMEL-Bench">Code</a>
           <p></p>
           <p>
@@ -346,10 +367,9 @@ layout: default
           <br>
           <strong>Ahmed Heakl</strong>, Sara Ghaboura, Omkar Thawakar, Fahad Shahbaz Khan, Hisham Cholakkal, Rao Muhammad Anwer, Salman Khan
           <br>
-          <em>arXiv 2025</em>
+          <em>Preprint</em>
           <br>
           <a href="https://arxiv.org/abs/2502.00094">Paper</a> /
-          <a href="https://mbzuai-oryx.github.io/AIN/">Project Website</a> /
           <a href="https://github.com/mbzuai-oryx/AIN">Code</a>
           <p></p>
           <p>
@@ -367,16 +387,15 @@ layout: default
           </div>
         </td>
         <td style="padding:20px;width:60%;vertical-align:middle">
-          <a href="https://arxiv.org/abs/2509.15293">
+          <a href="https://mbzuai-oryx.github.io/FoMER-Bench">
             <font color="black"><strong>How Good are Foundation Models in Step-by-Step Embodied Reasoning?</strong></font>
           </a>
           <br>
           Dinura Dissanayake, <strong>Ahmed Heakl</strong>, Omkar Thawakar, Noor Ahsan, Ritesh Thawkar, Ketan More, Jean Lahoud, Rao Muhammad Anwer, Hisham Cholakkal, Ivan Laptev, Fahad Shahbaz Khan, Salman Khan
           <br>
-          <em>arXiv 2025</em>
+          <em>Under Review</em>
           <br>
           <a href="https://arxiv.org/abs/2509.15293">Paper</a> /
-          <a href="https://mbzuai-oryx.github.io/FoMER-Bench/">Project Website</a> /
           <a href="https://github.com/mbzuai-oryx/FoMER-Bench">Code</a>
           <p></p>
           <p>
