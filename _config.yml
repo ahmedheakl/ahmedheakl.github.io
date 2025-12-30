@@ -18,12 +18,8 @@ navigation:
     url: "#publications"
   - title: News
     url: "#news"
-  - title: Achievements
-    url: "#achievements"
   - title: Academic Service
     url: "#service"
-  - title: Teaching
-    url: "#teaching"
 
 # Social links
 github_username: ahmedheakl

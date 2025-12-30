@@ -99,302 +99,186 @@ layout: default
 
     <!-- Publications Section -->
     <table id="publications" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
-        <tr>
-            <td style="padding:20px 20px 5px 20px;width:100%;vertical-align:middle">
-                <h2> <strong> Selected Publications </strong> </h2>
-            </td>
-        </tr>
-        </tbody>
-    </table>
-    
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
+  <tbody>
+    <tr>
+      <td style="padding:20px 20px 5px 20px;width:100%;vertical-align:middle">
+        <h2><strong>Selected Publications</strong></h2>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-       <tr>
-    <td style="padding:20px;width:65%;vertical-align:middle">
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <tbody>
+
+    <!-- SVRPBench -->
+    <tr>
+      <td style="padding:20px;width:40%;vertical-align:middle">
         <div class="one">
-            <img src='images/mobilevideogpt.png' width="500">
+          <img src="images/svrpbench.png" width="500" alt="SVRPBench">
         </div>
-    </td>
-    <td style="padding:20px;width:65%;vertical-align:middle">
-        <a href="https://amshaker.github.io/Mobile-VideoGPT/">
-            <font color="black"><strong>Mobile-VideoGPT: Fast and Accurate Video Understanding Language Model</strong></font>
+      </td>
+      <td style="padding:20px;width:60%;vertical-align:middle">
+        <a href="YOUR_PROJECT_OR_PAPER_LINK_HERE">
+          <font color="black"><strong>SVRPBench: A Realistic Benchmark for Stochastic Vehicle Routing Problem</strong></font>
         </a>
         <br>
-        <strong><a href="https://amshaker.github.io/">Abdelrahman Shaker</a></strong>,
-        <a href="https://www.mmaaz60.com/">Muhammad Maaz</a>,
-        <a href="https://scholar.google.com/citations?user=tlhShPsAAAAJ&hl=en">Chenhui Gou</a>,
-        <a href="https://scholar.google.com/citations?user=VxAuxMwAAAAJ&hl=en">Hamid Rezatofighi</a>,
-        <a href="https://salman-h-khan.github.io/">Salman Khan</a>,
-        <a href="https://sites.google.com/view/fahadkhans/home">Fahad Khan</a>
+        <strong>Your Name</strong> <span>(1st Author)</span>
         <br>
-        <a href="https://arxiv.org/abs/2503.21782">Paper</a> /
-        <a href="https://youtu.be/6Ueqq_D_mR0">YouTube</a> /
-        <a href="https://huggingface.co/collections/Amshaker/mobile-videogpt-fast-and-accurate-video-understanding-langu-67dc745074f8dd68d93b6b92">Models</a> /
-        <a href="https://amshaker.github.io/Mobile-VideoGPT/">Project Website</a>
+        <em>NeurIPS 2025 — Datasets and Benchmarks</em>
+        <br>
+        <a href="YOUR_PAPER_LINK_HERE">Paper</a> /
+        <a href="YOUR_CODE_LINK_HERE">Code</a> /
+        <a href="YOUR_DATASET_LINK_HERE">Dataset</a>
         <p></p>
-        <p>Mobile-VideoGPT is an efficient multimodal framework designed to operate with fewer than a billion parameters. Unlike traditional video large multimodal models, it integrates lightweight dual visual encoders, efficient projectors, and a small language model (SLM), enabling real-time inference on resource-constrained platforms. It further introduces an Attention-Based Frame Scoring mechanism for key-frame selection and an efficient token projector that prunes redundant visual tokens while preserving essential contextual cues. Evaluations across six video understanding benchmarks (e.g., MVBench, EgoSchema, NextQA, PerceptionTest) show that Mobile-VideoGPT-0.5B can generate up to 46 tokens per second while outperforming existing 0.5B-parameter competitors.</p>
-    </td>
-</tr>
-        
-        <tr>
-        <td style="padding:20px;width:65%;vertical-align:middle">
-            <div class="one">
-                <img src='images/videomath_qa.png' width="500">
-            </div>
-        </td>
-        <td style="padding:20px;width:65%;vertical-align:middle">
-            <a href="https://mbzuai-oryx.github.io/VideoMathQA">
-                <font color="black"><strong>VideoMathQA: Benchmarking Mathematical Reasoning via Multimodal Understanding in Videos</strong></font>
-            </a>
-            <br>
-            <a href="https://github.com/hanoonaR">Hanoona Rasheed</a>,
-            <strong><a href="https://amshaker.github.io/">Abdelrahman Shaker</a></strong>,
-            <a href="https://github.com/angelyimou">Anqi Tang</a>,
-            <a href="https://www.mmaaz60.com">Muhammad Maaz</a>,
-            <a href="https://scholar.google.com.pk/citations?user=p9-ohHsAAAAJ&hl=en">Ming-Hsuan Yang</a>,
-            <a href="https://salman-h-khan.github.io/">Salman Khan</a>,
-            <a href="https://sites.google.com/view/fahadkhans/home">Fahad Khan</a>
-            <br>
-            <a href="https://arxiv.org/abs/2506.05349">Paper</a> /
-            <a href="https://mbzuai-oryx.github.io/VideoMathQA">Project Website</a> /
-            <a href="https://huggingface.co/datasets/MBZUAI/VideoMathQA">Dataset</a>
-            <p></p>
-            <p>VideoMathQA is a benchmark designed to evaluate mathematical reasoning in real-world educational videos. It requires models to interpret and integrate information from three modalities — visuals, audio, and text — across time. The benchmark tackles the needle-in-a-multimodal-haystack problem, where key information is sparse and distributed across different modalities and moments in the video.</p>
-        </td>
-       </tr>
-       
-        <tr>
-            <td style="padding:20px;width:65%;vertical-align:middle">
-                <div class="one">
-                    <img src='images/groupmamba.png' width="500">
-                </div>
-            </td>
-            <td style="padding:20px;width:65%;vertical-align:middle">
-                <a href="https://github.com/Amshaker/GroupMamba">
-                    <font color="black"><strong>GroupMamba: Efficient Group-Based Visual State Space Model [CVPR 2025]</strong></font>
-                </a>
-                <br>
-               
-             <strong><a href="https://amshaker.github.io/">Abdelrahman Shaker</a></strong>,
-                <a href="https://talalwasim.github.io//">Syed Talal</a>,
-               <a href="https://salman-h-khan.github.io/">Salman Khan</a>,
-                 <a href="https://scholar.google.de/citations?user=1CLaPMEAAAAJ&hl=de">Juergen Gall</a>,
-                <a href="https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en/">Fahad Khan</a>
-                
-                <br>
-                <a href="https://arxiv.org/abs/2407.13772">Paper</a>
-                /
-                <a href="https://github.com/Amshaker/GroupMamba">Code</a>
-                <p></p>
-                <p> Our paper addresses the challenges of scaling SSM-based models for computer vision, particularly the instability and inefficiency of large model sizes. We introduce a parameter-efficient modulated group mamba layer that divides the input channels into four groups and applies our proposed SSM-based efficient Visual Single Selective Scanning (VSSS) block independently to each group, with each VSSS block scanning in one of the four spatial directions. The Modulated Group Mamba layer also wraps the four VSSS blocks into a channel modulation operator to improve cross-channel communication. Furthermore, we introduce a distillation-based training objective to stabilize the training of large models, leading to consistent performance gains. Our comprehensive experiments demonstrate the merits of the proposed contributions, leading to superior performance over existing methods for image classification on ImageNet-1K, object detection, instance segmentation on MS-COCO, and semantic segmentation on ADE20K. Our tiny variant with 23M parameters achieves state-of-the-art performance with a classification top-1 accuracy of 83.3% on ImageNet-1K, while being 26% efficient in terms of parameters, compared to the best existing Mamba design of same model size.</p>
-            </td>
-        </tr>    
+        <p>
+          SVRPBench is an open-source benchmark of 500+ urban-scale stochastic VRP instances featuring time-dependent congestion,
+          probabilistic delays, and heterogeneous time windows, together with a full evaluation suite for learning-based solvers.
+        </p>
+      </td>
+    </tr>
 
-        <tr>
-            <td style="padding:20px;width:65%;vertical-align:middle">
-                <div class="one">
-                    <img src='images/mavos.png' width="500">
-                </div>
-            </td>ß
-            <td style="padding:20px;width:65%;vertical-align:middle">
-                <a href="https://github.com/Amshaker/MAVOS">
-                    <font color="black"><strong>Efficient Video Object Segmentation via Modulated Cross-Attention Memory [WACV 2025]</strong></font>
-                </a>
-                <br>
-               
-             <strong><a href="https://amshaker.github.io/">Abdelrahman Shaker</a></strong>,
-                <a href="https://talalwasim.github.io//">Syed Talal</a>,
-               <a href="https://martin-danelljan.github.io/">Martin Danelljan</a>,             
-               <a href="https://salman-h-khan.github.io/">Salman Khan</a>,
-                 <a href="https://scholar.google.com/citations?user=p9-ohHsAAAAJ&hl=en">Ming-Hsuan Yang</a>,
-                <a href="https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en/">Fahad Khan</a>
-                
-                <br>
-                <a href="https://arxiv.org/abs/2403.17937">Paper</a>
-                /
-                <a href="https://github.com/Amshaker/MAVOS">Code</a>
-                <p></p>
-                <p> We propose an efficient transformer-based approach, named MAVOS, that introduces an optimized and dynamic long-term modulated cross-attention (MCA) memory to model temporal smoothness without requiring frequent memory expansion. The proposed MCA effectively encodes both local and global features at various levels of granularity while efficiently maintaining consistent speed regardless of the video length. Extensive experiments on multiple benchmarks, LVOS, Long-Time Video, and DAVIS 2017, demonstrate the effectiveness of our proposed contributions leading to real-time inference and markedly reduced memory demands without any degradation in segmentation accuracy on long videos. Compared to the best existing transformer-based approach, our MAVOS increases the speed by 7.6X, while significantly reducing the GPU memory by 87% with comparable segmentation performance on short and long video datasets. </p>
-            </td>
-        </tr>    
+    <!-- GG -->
+    <tr>
+      <td style="padding:20px;width:40%;vertical-align:middle">
+        <div class="one">
+          <img src="images/gg.png" width="500" alt="GG">
+        </div>
+      </td>
+      <td style="padding:20px;width:60%;vertical-align:middle">
+        <a href="YOUR_PROJECT_OR_PAPER_LINK_HERE">
+          <font color="black"><strong>GG: An LM Approach for CISC-to-RISC Transpilation with Testing Guarantees</strong></font>
+        </a>
+        <br>
+        <strong>Your Name</strong> <span>(1st Author)</span>
+        <br>
+        <em>EMNLP 2025 — Findings</em>
+        <br>
+        <a href="YOUR_PAPER_LINK_HERE">Paper</a> /
+        <a href="YOUR_CODE_LINK_HERE">Code</a>
+        <p></p>
+        <p>
+          We introduce Guaranteed Guess (GG), a test-driven CISC-to-RISC transpiler using LLMs. GG achieves 99.4% functional
+          accuracy on x86→ARMv8 translation and improves runtime and memory versus strong baselines through verification-centric
+          generation and refinement.
+        </p>
+      </td>
+    </tr>
 
-        <tr>
-            <td style="padding:20px;width:65%;vertical-align:middle">
-                <div class="one">
-                    <img src='images/UNETR++.jpg' width="500">
-                </div>
-            </td>
-            <td style="padding:20px;width:65%;vertical-align:middle">
-                <a href="https://amshaker.github.io/unetr_plus_plus/">
-                    <font color="black"><strong>UNETR++: Delving into Efficient and Accurate 3D Medical Image Segmentation [IEEE TMI-2024] (Journal IF: 10.6)</strong></font>
-                </a>
-                <br>
-               <strong><a href="https://amshaker.github.io/">Abdelrahman Shaker</a></strong>,
-                <a href="https://mmaaz60.github.io/">Muhammad Maaz</a>,
-                <a href="https://www.hanoonarasheed.com/">Hanoona Rashed</a>,
-                 <a href="https://salman-h-khan.github.io/">Salman Khan</a>,
-                 <a href="https://scholar.google.com/citations?user=p9-ohHsAAAAJ&hl=en">Ming-Hsuan Yang</a>,
-                <a href="https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en/">Fahad Khan</a>
-                
-                <br>
-                <a href="https://amshaker.github.io/unetr_plus_plus/">Project page</a>
-                /
-                <a href="https://ieeexplore.ieee.org/document/10526382">Paper</a>
-                /
-                <a href="https://github.com/Amshaker/unetr_plus_plus">Code</a>
-                <p></p>
-                <p> In this paper, we propose a 3D medical image segmentation approach, named UNETR++, that offers both high-quality segmentation masks as well as efficiency in terms of parameters and compute cost. The core of our design is the introduction of a novel efficient paired attention (EPA) block that efficiently learns spatial and channel-wise discriminative features using a pair of inter-dependent branches based on spatial and channel attention. Our spatial attention formulation is efficient having linear complexity with respect to the input sequence length. To enable communication between spatial and channel-focused branches, we share the weights of query and key mapping functions that provide a complimentary benefit (paired attention), while also reducing the overall network parameters. Our extensive evaluations on three benchmarks, Synapse, BTCV and ACDC, reveal the effectiveness of the proposed contributions in terms of both efficiency and accuracy. On Synapse dataset, our UNETR++ sets a new state-of-the-art with a Dice Similarity Score of 87.2%, while being significantly efficient with a reduction of over 71% in terms of both parameters and FLOPs, compared to the best existing method in the literature. </p>
-            </td>
-        </tr>    
+    <!-- KITAB-Bench -->
+    <tr>
+      <td style="padding:20px;width:40%;vertical-align:middle">
+        <div class="one">
+          <img src="images/kitab-bench.png" width="500" alt="KITAB-Bench">
+        </div>
+      </td>
+      <td style="padding:20px;width:60%;vertical-align:middle">
+        <a href="YOUR_PROJECT_OR_PAPER_LINK_HERE">
+          <font color="black"><strong>KITAB-Bench: Multi-Domain Arabic OCR and Document Understanding Bench</strong></font>
+        </a>
+        <br>
+        <strong>Your Name</strong> <span>(1st Author)</span>
+        <br>
+        <em>ACL 2025 — Findings</em>
+        <br>
+        <a href="YOUR_PAPER_LINK_HERE">Paper</a> /
+        <a href="YOUR_DATASET_LINK_HERE">Dataset</a> /
+        <a href="YOUR_CODE_LINK_HERE">Code</a>
+        <p></p>
+        <p>
+          KITAB-Bench contains 8,809 Arabic pages spanning 9 domains and 36 sub-domains to evaluate OCR and document
+          understanding. The benchmark highlights large gains from VLM-based OCR (≈60% lower character error than traditional
+          OCR) while PDF-to-Markdown conversion peaks around ≈65%.
+        </p>
+      </td>
+    </tr>
 
-        <tr>
-            <td style="padding:20px;width:65%;vertical-align:middle">
-                <div class="one">
-                    <img src='images/glamm.png' width="500">
-                </div>
-            </td>
-            <td style="padding:20px;width:65%;vertical-align:middle">
-                <a href="https://amshaker.github.io/unetr_plus_plus/">
-                    <font color="black"><strong>GLaMM: Grounding Large Multimodal Model [CVPR 2024]</strong></font>
-                </a>
-                <br>
-                <a href="https://mmaaz60.github.io/">Muhammad Maaz</a>,
-                <a href="https://www.hanoonarasheed.com/">Hanoona Rashed</a>,
-               <a href="https://www.linkedin.com/in/sahalshajim">Sahal Shaji</a>,
-               <strong><a href="https://amshaker.github.io/">Abdelrahman Shaker</a></strong>,
-                         <a href="https://salman-h-khan.github.io/">Salman Khan</a>,
-                 <a href="https://scholar.google.ae/citations?user=bZ3YBRcAAAAJ&hl=fr/">Hisham Cholakkal</a>,
-                <a href="https://scholar.google.fi/citations?user=_KlvMVoAAAAJ&hl=en">Rao Muhammad Anwer</a>,
-                <a href="https://www.cs.cmu.edu/~epxing/">Eric Xing</a>,
-                 <a href="https://scholar.google.com/citations?user=p9-ohHsAAAAJ&hl=en">Ming-Hsuan Yang</a>,
-                <a href="https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en/">Fahad Khan</a>
-                
-                <br>
-                <a href="https://mbzuai-oryx.github.io/groundingLMM/">Project page</a>
-                /
-                <a href="https://arxiv.org/abs/2311.03356">Paper</a>
-                /
-                <a href="https://github.com/mbzuai-oryx/groundingLMM?tab=readme-ov-file">Code</a>
-                <p></p>
-                <p> Grounding Large Multimodal Model (GLaMM) is an end-to-end trained LMM which provides visual grounding capabilities with the flexibility to process both image and region inputs. This enables the new unified task of Grounded Conversation Generation that combines phrase grounding, referring expression segmentation, and vision-language conversations. Equipped with the capability for detailed region understanding, pixel-level groundings, and conversational abilities, GLaMM offers a versatile capability to interact with visual inputs provided by the user at multiple granularity levels. </p>
-            </td>
-        </tr>    
+    <!-- LlamaV-o1 -->
+    <tr>
+      <td style="padding:20px;width:40%;vertical-align:middle">
+        <div class="one">
+          <img src="images/llamavo1.png" width="500" alt="LlamaV-o1">
+        </div>
+      </td>
+      <td style="padding:20px;width:60%;vertical-align:middle">
+        <a href="YOUR_PROJECT_OR_PAPER_LINK_HERE">
+          <font color="black"><strong>LlamaV-o1: Rethinking Step-by-step Visual Reasoning in LLMs</strong></font>
+        </a>
+        <br>
+        <strong>Your Name</strong> <span>(Co-Author)</span>
+        <br>
+        <em>ACL 2025 — Findings</em>
+        <br>
+        <a href="YOUR_PAPER_LINK_HERE">Paper</a> /
+        <a href="YOUR_CODE_LINK_HERE">Code</a> /
+        <a href="YOUR_BENCHMARK_LINK_HERE">Benchmark</a>
+        <p></p>
+        <p>
+          We propose a curriculum framework and a benchmark with 4k+ reasoning steps across 8 categories for step-by-step
+          visual reasoning. LlamaV-o1 improves over Llava-CoT by 3.8% while delivering ~5× faster inference.
+        </p>
+      </td>
+    </tr>
 
-        <tr>
-            <td style="padding:20px;width:65%;vertical-align:middle">
-                <div class="one">
-                    <img src='images/SwiftFormer.png' width="500">
-                </div>
-            </td>
-            <td style="padding:20px;width:65%;vertical-align:middle">
-                <a href="https://github.com/Amshaker/SwiftFormer/">
-                    <font color="black"><strong>SwiftFormer: Efficient Additive Attention for Transformer-based Real-time Mobile Vision Applications [ICCV 2023]</strong></font>
-                </a>
-                <br>
-               <strong><a href="https://amshaker.github.io/">Abdelrahman Shaker</a></strong>,
-                <a href="https://mmaaz60.github.io/">Muhammad Maaz</a>,
-                <a href="https://www.hanoonarasheed.com/">Hanoona Rashed</a>,
-                 <a href="https://salman-h-khan.github.io/">Salman Khan</a>,
-                 <a href="https://scholar.google.com/citations?user=p9-ohHsAAAAJ&hl=en">Ming-Hsuan Yang</a>,
-                <a href="https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en/">Fahad Khan</a>
-                
-                <br>
-                <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Shaker_SwiftFormer_Efficient_Additive_Attention_for_Transformer-based_Real-time_Mobile_Vision_Applications_ICCV_2023_paper.pdf">Paper</a>
-                /
-                <a href="https://github.com/Amshaker/SwiftFormer">Code</a>
-                <p></p>
-                <p> Self-attention has become a defacto choice for capturing global context in various vision applications. However, its quadratic computational complexity with respect to image resolution limits its use in real-time applications, especially for deployment on resource-constrained mobile devices. Although hybrid approaches have been proposed to combine the advantages of convolutions and self-attention for a better speed-accuracy trade-off, the expensive matrix multiplication operations in self-attention remain a bottleneck. In this work, we introduce a novel efficient additive attention mechanism that effectively replaces the quadratic matrix multiplication operations with linear element-wise multiplications. Our design shows that the key-value interaction can be replaced with a linear layer without sacrificing any accuracy. Unlike previous state-of-the-art methods, our efficient formulation of self-attention enables its usage at all stages of the network. Using our proposed efficient additive attention, we build a series of models called "SwiftFormer" which achieves state-of-the-art performance in terms of both accuracy and mobile inference speed. Our small variant achieves 78.5% top-1 ImageNet-1K accuracy with only 0.8~ms latency on iPhone 14, which is more accurate and 2x faster compared to MobileViT-v2. </p>
-            </td>
-        </tr>    
+    <!-- CASS -->
+    <tr>
+      <td style="padding:20px;width:40%;vertical-align:middle">
+        <div class="one">
+          <img src="images/cass.png" width="500" alt="CASS">
+        </div>
+      </td>
+      <td style="padding:20px;width:60%;vertical-align:middle">
+        <a href="YOUR_PROJECT_OR_PAPER_LINK_HERE">
+          <font color="black"><strong>CASS: Nvidia to AMD Transpilation with Data, Models, and Benchmark</strong></font>
+        </a>
+        <br>
+        <strong>Your Name</strong>
+        <br>
+        <em>Preprint / Under Review</em>
+        <br>
+        <a href="YOUR_PAPER_LINK_HERE">Paper</a> /
+        <a href="YOUR_CODE_LINK_HERE">Code</a> /
+        <a href="YOUR_DATASET_LINK_HERE">Dataset</a>
+        <p></p>
+        <p>
+          CASS introduces the first large-scale dataset and benchmark (70k samples) for transpilation between Nvidia CUDA and
+          AMD HIP/RDNA3 at both source and assembly levels. We train domain-specialized LLMs (up to 7B) that achieve strong
+          functional preservation and substantially improve transpilation accuracy on challenging low-level code.
+        </p>
+      </td>
+    </tr>
 
-        <tr>
-            <td style="padding:20px;width:65%;vertical-align:middle">
-                <div class="one">
-                    <img src='images/EdgeNeXt.png' width="500">
-                </div>
-            </td>
-            <td style="padding:20px;width:65%;vertical-align:middle">
-                <a href="https://amshaker.github.io/EdgeNeXt/">
-                    <font color="black"><strong>EdgeNeXt: Efficiently Amalgamated CNN-Transformer Architecture for Mobile Vision Applications [ECCVW 2022]</strong></font>
-                </a>
-                <br>
-                <a href="https://scholar.google.com/citations?user=vTy9Te8AAAAJ&hl=en&authuser=1&oi=sra">Muhammad Maaz</a>,
-                <strong><a href="https://amshaker.github.io/">Abdelrahman Shaker</a></strong>
-                (First author equal contribution),
-                <a href="https://scholar.google.com/citations?hl=en&user=bZ3YBRcAAAAJ">Hisham Cholakkal</a>,
-                 <a href="https://salman-h-khan.github.io/">Salman Khan</a>,
-                <a href="https://www.waqaszamir.com/">Syed Waqas Zamir</a>,
-                 <a href="https://scholar.google.com/citations?hl=en&authuser=1&user=_KlvMVoAAAAJ">Rao Muhammad Anwer</a>,
-                <a href="https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en/">Fahad Khan</a>
-                
-                <br>
-                <a href="https://amshaker.github.io/EdgeNeXt/">Project page</a>
-                /
-                <a href="https://arxiv.org/abs/2206.10589">Paper</a>
-                /
-                <a href="https://github.com/mmaaz60/EdgeNeXt">Code & Model weights</a>
-                <p></p>
-                <p>We present EdgeNeXt, a new hybrid architecture that effectively combine the strengths of both CNN and Transformer models. Specifically in EdgeNeXt, we introduce split depth-wise transpose attention (SDTA) encoder that splits input tensors into multiple channel groups and utilizes depth-wise convolution along with self-attention across channel dimensions to implicitly increase the receptive field and encode multi-scale features. Our extensive experiments on classification, detection and segmentation tasks, reveal the merits of the proposed approach, outperforming state-of-the-art methods with comparatively lower compute requirements. Our EdgeNeXt model with 1.3M parameters achieves 71.2% top-1 accuracy on ImageNet-1K, outperforming MobileViT with an absolute gain of 2.2% with 28% reduction in FLOPs. Further, our EdgeNeXt model with 5.6M parameters achieves 81.1% (with knowledge distillation) and 79.4% (without knowledge distillation) top-1 accuracy on ImageNet-1K. </p>
-            </td>
-        </tr>    
+    <!-- VideoMolmo -->
+    <tr>
+      <td style="padding:20px;width:40%;vertical-align:middle">
+        <div class="one">
+          <img src="images/videomolmo.png" width="500" alt="VideoMolmo">
+        </div>
+      </td>
+      <td style="padding:20px;width:60%;vertical-align:middle">
+        <a href="YOUR_PROJECT_OR_PAPER_LINK_HERE">
+          <font color="black"><strong>VideoMolmo: Spatio-Temporal Grounding Meets Pointing</strong></font>
+        </a>
+        <br>
+        <strong>Your Name</strong>
+        <br>
+        <em>Preprint / Under Review</em>
+        <br>
+        <a href="YOUR_PAPER_LINK_HERE">Paper</a> /
+        <a href="YOUR_CODE_LINK_HERE">Code</a> /
+        <a href="YOUR_BENCHMARK_LINK_HERE">VPoS-Bench</a>
+        <p></p>
+        <p>
+          VideoMolmo is a spatio-temporal grounding framework that combines LLM-driven pointing with mask fusion (via SAM2).
+          We introduce temporal attention and bidirectional mask propagation, curate a large video-caption dataset with dense
+          object points, and propose VPoS-Bench to evaluate grounding, counting, and reasoning in real-world video domains.
+        </p>
+      </td>
+    </tr>
 
-        <tr>
-            <td style="padding:20px;width:65%;vertical-align:middle">
-                <div class="one">
-                    <img src='images/Insta_yolo.png' width="500">
-                </div>
-            </td>
-            <td style="padding:20px;width:65%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2102.06777">
-                    <font color="black"><strong> INSTA-YOLO: Real-Time Instance Segmentation [ICMLW 2021]</strong></font>
-                </a>
-                <br>
-                <a href="https://scholar.google.com/citations?user=0OEerycAAAAJ&hl=en">Eslam Bakr</a>,
-                <strong><a href="https://amshaker.github.io/">Abdelrahman Shaker,</a></strong>
-                (First author equal contribution),
-                <a href="https://scholar.google.com/citations?user=hiEbSZYAAAAJ&hl=en">Ahmed El-Sallab</a>,
-                 <a href="https://orcid.org/0000-0002-2215-5594">Mayada Hadhoud</a>
+  </tbody>
+</table>
 
-                <br>
-                <a href="https://arxiv.org/abs/2102.06777">Paper</a>
-                <p></p>
-                <p> We propose Insta-YOLO, a novel one-stage end-to-end deep learning model for real-time instance segmentation. Instead of pixel-wise prediction, our model predicts instances as object contours represented by 2D points in Cartesian space. We evaluate our model on three datasets, namely, Carvana,Cityscapes and Airbus. We compare our results to the state-of-the-art models for instance segmentation. The results show our model achieves competitive accuracy in terms of mAP at twice the speed on GTX-1080 GPU</p>
-            </td>
-        </tr>
-
-        <tr>
-            <td style="padding:20px;width:65%;vertical-align:middle">
-                <div class="one">
-                    <img src='images/GANs.PNG' width="500">
-                </div>
-            </td>
-            <td style="padding:20px;width:65%;vertical-align:middle">
-                <a href="https://ieeexplore.ieee.org/document/9000871">
-                    <font color="black"><strong> Generalization of Convolutional Neural Networks for ECG Classification Using Generative Adversarial Networks [IEEE Access 2020]</strong></font>
-                </a>
-                <br>
-
-                <strong><a href="https://amshaker.github.io/">Abdelrahman Shaker</a></strong>,
-                <a href="https://scholar.google.com/citations?user=WEEZVTgAAAAJ&hl=en">Manal Tantawi</a>,
-                <a href="https://scholar.google.com/citations?user=xlM3esYAAAAJ&hl=en&oi=ao">Howida Shedeed</a>,
-                 <a href="https://scholar.google.com/citations?user=T0ct7pIAAAAJ&hl=en&oi=ao">Mohamed Tolba</a>
-
-                <br>
-                <a href="https://ieeexplore.ieee.org/document/9000871">Paper</a>
-                <p></p>
-                <p> We propose a novel data-augmentation technique based on generative adversarial networks (GANs) to restore the balance of the MITBIH dataset. Then, two deep learning approaches—an end-to-end approach and a two-stage hierarchical approach—based on deep convolutional
-neural networks (CNNs) are used for heartbeat classification. Results show that augmenting the original
-imbalanced dataset with generated heartbeats by using the proposed techniques more effectively improves
-the performance of ECG classification than using the same techniques trained only with the original dataset.
-Furthermore, we demonstrate that augmenting the heartbeats using GANs outperforms other common data
-augmentation techniques. </p>
-            </td>
-        </tr>
-
-        </tbody>
-    </table>
 
     <!-- News Section -->
     <table id="news" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
