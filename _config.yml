@@ -1,0 +1,42 @@
+# Site settings
+title: Abdelrahman Shaker
+email: abdelrahman.youssief@mbzuai.ac.ae
+description: > # this means to ignore newlines until "baseurl:"
+  Computer Vision Researcher at Mohamed Bin Zayed University of Artificial Intelligence
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://amshaker.github.io" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Navigation
+navigation:
+  - title: About
+    url: "#about"
+  - title: Publications
+    url: "#publications"
+  - title: News
+    url: "#news"
+  - title: Achievements
+    url: "#achievements"
+  - title: Academic Service
+    url: "#service"
+  - title: Teaching
+    url: "#teaching"
+  - title: Students
+    url: "#students"
+
+# Social links
+github_username: Amshaker
+google_scholar: eEz4Wu4AAAAJ
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
