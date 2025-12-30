@@ -1,10 +1,10 @@
 # Site settings
-title: Abdelrahman Shaker
-email: abdelrahman.youssief@mbzuai.ac.ae
+title: Ahmed Heakl
+email: ahmed.heakl@mbzuai.ac.ae
 description: > # this means to ignore newlines until "baseurl:"
   Computer Vision Researcher at Mohamed Bin Zayed University of Artificial Intelligence
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://amshaker.github.io" # the base hostname & protocol for your site
+url: "https://ahmedheakl.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
@@ -28,8 +28,8 @@ navigation:
     url: "#students"
 
 # Social links
-github_username: Amshaker
-google_scholar: eEz4Wu4AAAAJ
+github_username: ahmedheakl
+google_scholar: JcWO9OUAAAAJ
 
 # Exclude from processing
 exclude:
