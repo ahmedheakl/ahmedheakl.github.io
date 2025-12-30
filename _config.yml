@@ -24,8 +24,6 @@ navigation:
     url: "#service"
   - title: Teaching
     url: "#teaching"
-  - title: Students
-    url: "#students"
 
 # Social links
 github_username: ahmedheakl
