@@ -66,20 +66,20 @@ layout: default
                 <tr style="padding:0px">
                     <td style="padding:2.5%;width:65%;vertical-align:middle">
                         <p>
-                          I am a Computer Vision researcher with the
+                          I am a Computer Vision PhD student with the
                           <a href="https://www.ival-mbzuai.com/" target="_blank" rel="noopener noreferrer">Intelligent Visual Analytics Lab (IVAL)</a>
-                          in the
-                          <a href="https://mbzuai.ac.ae/research-department/computer-vision-department/" target="_blank" rel="noopener noreferrer">Computer Vision Department</a>
                           at
                           <a href="https://mbzuai.ac.ae/" target="_blank" rel="noopener noreferrer">Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)</a>,
                           advised by
-                          <a href="https://scholar.google.com/citations?user=M59O9lkAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Prof. Salman Khan</a>.
+                          <a href="https://scholar.google.com/citations?user=M59O9lkAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Prof. Salman Khan</a>
+                          and
+                          <a href="https://scholar.google.com/citations?user=zvaeYnUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Prof. Fahad Khan</a>.
+                          I completed my MSc in Computer Vision at MBZUAI.
                           My research focuses on vision-language models (VLMs) for reasoning and OCR, with an emphasis on efficient and reliable real-world deployment.
                         </p>
                         <p>
-                          I’m pursuing an MSc in Computer Vision at
-                          <a href="https://mbzuai.ac.ae/" target="_blank" rel="noopener noreferrer">MBZUAI</a>,
-                          and I combine academic research with building production-facing ML systems.
+                          I am currently a Research Scientist Intern at
+                          <a href="https://www.lgresearch.ai/" target="_blank" rel="noopener noreferrer">LG AI Research</a>.
                           Previously, I was a Research Scientist Intern at
                           <a href="https://www.parameterlab.de/" target="_blank" rel="noopener noreferrer">Parameter Lab</a>
                           (in collaboration with
@@ -170,7 +170,7 @@ layout: default
             <font color="black"><strong>CEPO: RLVR Self-Distillation using Contrastive Evidence Policy Optimization</strong></font>
           </a>
           <br>
-          <strong>Ahmed Heakl</strong>, Abdelrahman M. Shaker, Youssef Mohamed, Rania Elbadry, Omar Fetouh, Fahad Shahbaz Khan, Salman Khan
+          <strong>Ahmed Heakl</strong>, Abdelrahman M. Shaker, Youssef Mohamed, Rania Elbadry, Omar Fetouh, Fahad Khan, Salman Khan
           <br>
           <em>Under Submission</em>
           <br>
@@ -178,10 +178,10 @@ layout: default
           <a href="https://github.com/ahmedheakl/CEPO">Code</a>
           <p></p>
           <p>
-            CEPO is a token-level credit assignment method for RLVR that uses a contrastive ratio between correct and wrong answer teachers 
-            (drawn from rejected rollouts at no extra cost) to sharpen gradient signal at decisive reasoning steps while leaving filler tokens 
-            unchanged. CEPO achieves 43.43% and 60.56% average accuracy across five multimodal math reasoning benchmarks at 2B and 4B scale, 
-            outperforming GRPO under identical training budgets.
+            CEPO is a token-level credit assignment method for RLVR that replaces uniform reward signals with a contrastive ratio between correct 
+            and wrong answer teachers (drawn from rejected rollouts at no extra cost), focusing gradient updates on the tokens that actually decide correctness. 
+            In just 50 training steps, CEPO improves over GRPO by +2.26% at 2B and +3.13% at 4B scale across five multimodal math reasoning benchmarks; distribution 
+            matching alternatives (OPSD, SDPO) collapse below the untrained baseline, confirming the information leakage CEPO is designed to avoid.
           </p>
         </td>
       </tr>
