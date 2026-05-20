@@ -158,6 +158,34 @@ layout: default
         </td>
       </tr>
 
+      <!-- CEPO -->
+      <tr>
+        <td style="padding:20px;width:40%;vertical-align:middle">
+          <div class="one">
+            <img src="images/cepo.png" width="500" alt="CEPO">
+          </div>
+        </td>
+        <td style="padding:20px;width:60%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2605.19436">
+            <font color="black"><strong>CEPO: RLVR Self-Distillation using Contrastive Evidence Policy Optimization</strong></font>
+          </a>
+          <br>
+          <strong>Ahmed Heakl</strong>, Abdelrahman M. Shaker, Youssef Mohamed, Rania Elbadry, Omar Fetouh, Fahad Shahbaz Khan, Salman Khan
+          <br>
+          <em>ICLR 2026</em>
+          <br>
+          <a href="https://arxiv.org/abs/2605.19436">Paper</a> /
+          <a href="https://github.com/ahmedheakl/CEPO">Code</a>
+          <p></p>
+          <p>
+            CEPO is a token-level credit assignment method for RLVR that uses a contrastive ratio between correct and wrong answer teachers 
+            (drawn from rejected rollouts at no extra cost) to sharpen gradient signal at decisive reasoning steps while leaving filler tokens 
+            unchanged. CEPO achieves 43.43% and 60.56% average accuracy across five multimodal math reasoning benchmarks at 2B and 4B scale, 
+            outperforming GRPO under identical training budgets.
+          </p>
+        </td>
+      </tr>
+
       <!-- SVRPBench -->
       <tr>
         <td style="padding:20px;width:40%;vertical-align:middle">
@@ -319,9 +347,10 @@ layout: default
           <a href="https://mbzuai-nlp.github.io/SAHM/leaderboard.html">Leaderboard</a>
           <p></p>
           <p>
-            CASS introduces the first large-scale dataset and benchmark (70k samples) for transpilation between Nvidia CUDA and
-            AMD HIP/RDNA3 at both source and assembly levels. We train domain-specialized LLMs (up to 7B) that achieve strong
-            functional preservation and substantially improve transpilation accuracy on challenging low-level code.
+            SAHM is the first Arabic financial NLP benchmark, spanning seven tasks, AAOIFI standards QA, fatwa-based QA/MCQ, 
+            accounting and business exams, financial sentiment analysis, extractive summarization, and event-cause reasoning,
+            with 14,380 expert-verified instances from authentic regulatory, juristic, and corporate sources. Evaluating 20 LLMs, 
+            we show that Arabic fluency does not imply financial reasoning, and that domain-adapted 7–8B models can surpass GPT-5 and match 72B baselines.
           </p>
         </td>
       </tr>
