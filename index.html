@@ -355,6 +355,90 @@ layout: default
         </td>
       </tr>
 
+      <!-- The Geometry of Forgetting -->
+      <tr>
+        <td style="padding:20px;width:40%;vertical-align:middle">
+          <div class="one">
+            <img src="images/geometry-forgetting.png" width="500" alt="The Geometry of Forgetting">
+          </div>
+        </td>
+        <td style="padding:20px;width:60%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2605.09195">
+            <font color="black"><strong>The Geometry of Forgetting: Temporal Knowledge Drift as an Independent Axis in LLM Representations</strong></font>
+          </a>
+          <br>
+          Rania Elbadry, <strong>Ahmed Heakl</strong>, Fan Zhang, Dani Bouch, Yuxia Wang, Preslav Nakov, Zhuohan Xie
+          <br>
+          <em>NeurIPS 2026</em>
+          <br>
+          <a href="https://arxiv.org/abs/2605.09195">Paper</a>
+          <p></p>
+          <p>
+            We show that temporal knowledge drift, whether a stored fact has changed since training, is encoded as a direction in the residual stream
+            that is geometrically orthogonal to both correctness and uncertainty, so detectors built on those signals are blind to it by construction.
+            Across six instruction-tuned models, a linear drift probe reaches 0.83–0.95 AUROC while token entropy, semantic entropy, CCS, and SAPLMA
+            stay near chance (0.49–0.57), and a cross-cutoff experiment on identical inputs confirms the probe reads each model's own knowledge state.
+          </p>
+        </td>
+      </tr>
+
+      <!-- MedRoundsQA -->
+      <tr>
+        <td style="padding:20px;width:40%;vertical-align:middle">
+          <div class="one">
+            <img src="images/medroundsqa.png" width="500" alt="MedRoundsQA">
+          </div>
+        </td>
+        <td style="padding:20px;width:60%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2609.12851">
+            <font color="black"><strong>MedRoundsQA: A Persona and Difficulty Aware Evaluation for Multi-Turn Medical Consultations</strong></font>
+          </a>
+          <br>
+          Youssef Mohamed, <strong>Ahmed Heakl</strong>, Qinrong Cui, Junhong Liang, Rafiq Ali, Bdour Babillie, Nazira Dunbayeva, Lang Gao, Omar Hussein, Ahmed Nada, Ahmed Mohamed Magdy Mohamed, Jinghui Liu, Salman Khan, Imran Razzak, Yuxia Wang, Xiuying Chen
+          <br>
+          <em>EMNLP 2026</em>
+          <br>
+          <a href="https://arxiv.org/abs/2609.12851">Paper</a> /
+          <a href="https://github.com/youssefkhalil320/MedRoundsQA">Code</a>
+          <p></p>
+          <p>
+            MedRoundsQA is a multi-turn diagnostic benchmark built from 1,387 board-exam cases across 17 specialties: each case is converted into a
+            24-slot clinical record and instantiated as doctor–patient dialogues under different patient personas, with the clinical content held fixed.
+            Across fifteen LLM doctor agents, moving from single-turn to multi-turn consultation costs roughly 13–39 points of accuracy, accuracy plateaus
+            after 6–12 turns, and patient education level alone shifts accuracy by about 7–8 points.
+          </p>
+        </td>
+      </tr>
+
+      <!-- Right Frame, Wrong Rule -->
+      <tr>
+        <td style="padding:20px;width:40%;vertical-align:middle">
+          <div class="one">
+            <img src="images/right-frame.png" width="500" alt="Right Frame, Wrong Rule">
+          </div>
+        </td>
+        <td style="padding:20px;width:60%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2609.00999">
+            <font color="black"><strong>Right Frame, Wrong Rule: Cultural Cues Expose the Financial Knowledge Gap They Were Meant to Close</strong></font>
+          </a>
+          <br>
+          Rania Elbadry, <strong>Ahmed Heakl</strong>, Saeed Almheiri, Fan Zhang, Muhra AlMahri, Xueqing Peng, Mohsinul Kabir, Shuyao Wang, Yi Han, Saadeldine Eletter, Duzhen Zhang, Preslav Nakov, Yuxia Wang, Fajri Koto, Zhuohan Xie
+          <br>
+          <em>EMNLP 2026 — Findings</em>
+          <br>
+          <a href="https://arxiv.org/abs/2609.00999">Paper</a> /
+          <a href="https://huggingface.co/CulturalDefaultBias">Dataset</a>
+          <p></p>
+          <p>
+            We study normative pluralism in finance, where a question has valid answers under both Islamic and Western frameworks, using a four-choice
+            taxonomy that separates which framework a model picks from whether it is correct within it. This exposes the stereotype trap: a cultural cue
+            steers the model toward the Islamic framework, but it then picks a wrong answer within it. Across twelve models, two languages, and fifty
+            demographic signals, large open-weight models under the strongest cue pick the Islamic framework 97% of the time, yet 57–66% of those picks
+            are incorrect, which a two-choice evaluation would report as near-perfect alignment.
+          </p>
+        </td>
+      </tr>
+
       <!-- CASS -->
       <tr>
         <td style="padding:20px;width:40%;vertical-align:middle">
@@ -512,6 +596,12 @@ layout: default
         <tr>
             <ul>
                 <li>
+                 <a href="https://arxiv.org/abs/2605.09195">The Geometry of Forgetting</a> got accepted into NeurIPS 2026! [09/2026].
+                </li>
+                <li>
+                 Two papers accepted into EMNLP 2026: <a href="https://arxiv.org/abs/2609.12851">MedRoundsQA</a> (Main) and <a href="https://arxiv.org/abs/2609.00999">Right Frame, Wrong Rule</a> (Findings)! [08/2026].
+                </li>
+                <li>
                  <a href="https://arxiv.org/abs/2603.22286">WorldCache</a> got accepted into ECCV! [06/2026].
                 </li>
                 <li>
@@ -552,6 +642,9 @@ layout: default
         <tbody>
         <tr>
             <ul>
+                <li>
+                    Reviewer for VLMs-related papers in ICLR 2027.
+                </li>
                 <li>
                     Reviewer for VLMs-related papers in NeurIPS 2026.
                 </li>
