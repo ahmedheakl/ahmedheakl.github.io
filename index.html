@@ -43,6 +43,58 @@ layout: default
     .about-table tr td:last-child {
         width: 35% !important;
     }
+
+    /* General polish: consistent links, tighter section headings */
+    a {
+        color: #1772d0;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    h2 {
+        margin: 0.4em 0 0.2em;
+        padding-bottom: 6px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .about-table img {
+        border-radius: 8px;
+    }
+
+    /* Tablets and phones: let figures shrink to fit their column */
+    @media (max-width: 1024px) {
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    /* Mobile: stack figure above text and use the full screen width */
+    @media (max-width: 768px) {
+        .content-wrapper td {
+            padding: 8px 0 !important;
+        }
+
+        #publications ~ table tr td:nth-child(n),
+        .about-table tr td:first-child,
+        .about-table tr td:last-child {
+            display: block;
+            width: 100% !important;
+            max-width: none !important;
+        }
+
+        .about-table tr {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+    }
 </style>
 
 <table style="width:100%;max-width:1400px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -136,7 +188,7 @@ layout: default
       <tr>
         <td style="padding:20px;width:40%;vertical-align:middle">
           <div class="one">
-            <img src="images/drllm.png" width="500" alt="Dr.LLM">
+            <img loading="lazy" src="images/drllm.png" width="500" alt="Dr.LLM">
           </div>
         </td>
         <td style="padding:20px;width:60%;vertical-align:middle">
@@ -158,11 +210,40 @@ layout: default
         </td>
       </tr>
 
+      <!-- VQS -->
+      <tr>
+        <td style="padding:20px;width:40%;vertical-align:middle">
+          <div class="one">
+            <img loading="lazy" src="images/vqs.png" width="500" alt="VQS">
+          </div>
+        </td>
+        <td style="padding:20px;width:60%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2609.33855">
+            <font color="black"><strong>Program-Verified Self-Evolution for Vision-Language Models</strong></font>
+          </a>
+          <br>
+          <strong>Ahmed Heakl</strong>, Sungik Choi, Moontae Lee, Salman Khan
+          <br>
+          <em>Resubmission</em>
+          <br>
+          <a href="https://arxiv.org/abs/2609.33855">Paper</a> /
+          <a href="https://github.com/ahmedheakl/VQS">Code</a>
+          <p></p>
+          <p>
+            Self-evolving VLMs label their self-generated questions by majority vote or a model judge, and we find 24% and 18% of those labels are wrong.
+            VQS instead parses each unlabeled image into a structured record (scene graph, chart table, or diagram graph), from which fixed programs write
+            a question and compute its answer, while the model only verifies the individual facts the program reads. Human raters find 94% of VQS answers
+            correct versus 76% for majority voting, and across ten benchmarks VQS improves Qwen3-VL by up to 3.18 points at the 2B, 4B, and 8B scales,
+            beating the strongest self-evolving baseline at each.
+          </p>
+        </td>
+      </tr>
+
       <!-- CEPO -->
       <tr>
         <td style="padding:20px;width:40%;vertical-align:middle">
           <div class="one">
-            <img src="images/cepo.png" width="500" alt="CEPO">
+            <img loading="lazy" src="images/cepo.png" width="500" alt="CEPO">
           </div>
         </td>
         <td style="padding:20px;width:60%;vertical-align:middle">
@@ -190,11 +271,11 @@ layout: default
       <tr>
         <td style="padding:20px;width:40%;vertical-align:middle">
           <div class="one">
-            <img src="images/svrpbench.png" width="500" alt="SVRPBench">
+            <img loading="lazy" src="images/svrpbench.png" width="500" alt="SVRPBench">
           </div>
         </td>
         <td style="padding:20px;width:60%;vertical-align:middle">
-          <a href="YOUR_PROJECT_OR_PAPER_LINK_HERE">
+          <a href="https://arxiv.org/abs/2505.21887">
             <font color="black"><strong>SVRPBench: A Realistic Benchmark for Stochastic Vehicle Routing Problem</strong></font>
           </a>
           <br>
@@ -217,7 +298,7 @@ layout: default
       <tr>
         <td style="padding:20px;width:40%;vertical-align:middle">
           <div class="one">
-            <img src="images/mobileo.png" width="500" alt="Mobile-O">
+            <img loading="lazy" src="images/mobileo.png" width="500" alt="Mobile-O">
           </div>
         </td>
         <td style="padding:20px;width:60%;vertical-align:middle">
@@ -245,7 +326,7 @@ layout: default
       <tr>
         <td style="padding:20px;width:40%;vertical-align:middle">
           <div class="one">
-            <img src="images/gg.png" width="500" alt="GG">
+            <img loading="lazy" src="images/gg.png" width="500" alt="GG">
           </div>
         </td>
         <td style="padding:20px;width:60%;vertical-align:middle">
@@ -273,7 +354,7 @@ layout: default
       <tr>
         <td style="padding:20px;width:40%;vertical-align:middle">
           <div class="one">
-            <img src="images/kitab-bench.png" width="500" alt="KITAB-Bench">
+            <img loading="lazy" src="images/kitab-bench.png" width="500" alt="KITAB-Bench">
           </div>
         </td>
         <td style="padding:20px;width:60%;vertical-align:middle">
@@ -301,7 +382,7 @@ layout: default
       <tr>
         <td style="padding:20px;width:40%;vertical-align:middle">
           <div class="one">
-            <img src="images/llamavo1.png" width="500" alt="LlamaV-o1">
+            <img loading="lazy" src="images/llamavo1.png" width="500" alt="LlamaV-o1">
           </div>
         </td>
         <td style="padding:20px;width:60%;vertical-align:middle">
@@ -329,7 +410,7 @@ layout: default
       <tr>
         <td style="padding:20px;width:40%;vertical-align:middle">
           <div class="one">
-            <img src="images/sahm.png" width="500" alt="SAHM">
+            <img loading="lazy" src="images/sahm.png" width="500" alt="SAHM">
           </div>
         </td>
         <td style="padding:20px;width:60%;vertical-align:middle">
@@ -343,7 +424,7 @@ layout: default
           <br>
           <a href="https://arxiv.org/abs/2604.19098">Paper</a> /
           <a href="https://github.com/mbzuai-nlp/SAHM">Code</a> /
-          <a href="https://huggingface.co/SahmBenchmark">Dataset</a>
+          <a href="https://huggingface.co/SahmBenchmark">Dataset</a> /
           <a href="https://mbzuai-nlp.github.io/SAHM/leaderboard.html">Leaderboard</a>
           <p></p>
           <p>
@@ -359,7 +440,7 @@ layout: default
       <tr>
         <td style="padding:20px;width:40%;vertical-align:middle">
           <div class="one">
-            <img src="images/geometry-forgetting.png" width="500" alt="The Geometry of Forgetting">
+            <img loading="lazy" src="images/geometry-forgetting.png" width="500" alt="The Geometry of Forgetting">
           </div>
         </td>
         <td style="padding:20px;width:60%;vertical-align:middle">
@@ -386,7 +467,7 @@ layout: default
       <tr>
         <td style="padding:20px;width:40%;vertical-align:middle">
           <div class="one">
-            <img src="images/medroundsqa.png" width="500" alt="MedRoundsQA">
+            <img loading="lazy" src="images/medroundsqa.png" width="500" alt="MedRoundsQA">
           </div>
         </td>
         <td style="padding:20px;width:60%;vertical-align:middle">
@@ -414,7 +495,7 @@ layout: default
       <tr>
         <td style="padding:20px;width:40%;vertical-align:middle">
           <div class="one">
-            <img src="images/right-frame.png" width="500" alt="Right Frame, Wrong Rule">
+            <img loading="lazy" src="images/right-frame.png" width="500" alt="Right Frame, Wrong Rule">
           </div>
         </td>
         <td style="padding:20px;width:60%;vertical-align:middle">
@@ -443,7 +524,7 @@ layout: default
       <tr>
         <td style="padding:20px;width:40%;vertical-align:middle">
           <div class="one">
-            <img src="images/cass.png" width="500" alt="CASS">
+            <img loading="lazy" src="images/cass.png" width="500" alt="CASS">
           </div>
         </td>
         <td style="padding:20px;width:60%;vertical-align:middle">
@@ -471,7 +552,7 @@ layout: default
       <tr>
         <td style="padding:20px;width:40%;vertical-align:middle">
           <div class="one">
-            <img src="images/videomolmo.png" width="500" alt="VideoMolmo">
+            <img loading="lazy" src="images/videomolmo.png" width="500" alt="VideoMolmo">
           </div>
         </td>
         <td style="padding:20px;width:60%;vertical-align:middle">
@@ -501,7 +582,7 @@ layout: default
       <tr>
         <td style="padding:20px;width:40%;vertical-align:middle">
           <div class="one">
-            <img src="images/camelbench.png" width="500" alt="CAMEL-Bench">
+            <img loading="lazy" src="images/camelbench.png" width="500" alt="CAMEL-Bench">
           </div>
         </td>
         <td style="padding:20px;width:60%;vertical-align:middle">
@@ -527,7 +608,7 @@ layout: default
       <tr>
         <td style="padding:20px;width:40%;vertical-align:middle">
           <div class="one">
-            <img src="images/ain.png" width="500" alt="AIN">
+            <img loading="lazy" src="images/ain.png" width="500" alt="AIN">
           </div>
         </td>
         <td style="padding:20px;width:60%;vertical-align:middle">
@@ -553,7 +634,7 @@ layout: default
       <tr>
         <td style="padding:20px;width:40%;vertical-align:middle">
           <div class="one">
-            <img src="images/fomer.png" width="500" alt="FoMER Benchmark">
+            <img loading="lazy" src="images/fomer.png" width="500" alt="FoMER Benchmark">
           </div>
         </td>
         <td style="padding:20px;width:60%;vertical-align:middle">
